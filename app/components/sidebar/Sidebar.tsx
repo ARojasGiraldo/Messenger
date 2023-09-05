@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 import DesktopSidebar from "./DesktopMovile";
 import MobileFooter from "./MobileFooter";
 
-async function Sidebar({ children }: { children: ReactNode }) {
+async function Sidebar({ children }: { children: JSX.Element }) {
   const currentUser = await getCurrentUser();
   return (
     <div className="h-full">
